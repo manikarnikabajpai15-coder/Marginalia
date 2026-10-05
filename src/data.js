@@ -1,0 +1,23 @@
+const img = (id) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=1200&q=70`;
+export const SEED = [
+  { id: 'p1', title: 'Server Components, Explained Without the Hype', author: 'Maya Chen', category: 'Tech',
+    tags: ['react', 'frontend', 'performance'], date: '2026-09-12', cover: img('photo-1555066931-4365d14bab8c'),
+    likes: 42, liked: false, bookmarked: false,
+    content: `React Server Components move work from the browser to the server, so less JavaScript ships to your users.\n\n## What actually changes\n\nComponents that only read data no longer need a client bundle. You fetch, render, and send HTML-like output; interactive pieces stay as client components.\n\n## When to use them\n\nStart with data-heavy, read-mostly pages. Keep forms, drag-and-drop, and anything with local state on the client.`,
+    comments: [{ id: 'c1', name: 'Dev', text: 'Great breakdown, the "read-mostly" rule is helpful.', date: '2026-09-13' }] },
+  { id: 'p2', title: 'Designing Calm Interfaces', author: 'Jonas Weber', category: 'Design',
+    tags: ['ux', 'typography', 'accessibility'], date: '2026-08-28', cover: img('photo-1561070791-2526d30994b8'),
+    likes: 31, liked: false, bookmarked: false,
+    content: `A calm interface lets people finish their task and leave. It doesn't compete for attention.\n\n## Reduce choices\n\nOne primary action per screen. Secondary actions become quiet text links.\n\n## Let type do the work\n\nGood spacing and a clear scale replace borders, badges, and boxes. Aim for lines under 75 characters.`,
+    comments: [] },
+  { id: 'p3', title: 'A Weekly Review That Takes 20 Minutes', author: 'Priya Nair', category: 'Productivity',
+    tags: ['habits', 'planning'], date: '2026-08-05', cover: '',
+    likes: 57, liked: false, bookmarked: false,
+    content: `Most weekly reviews fail because they are too long. Keep yours to three questions.\n\n## The three questions\n\nWhat moved forward? What stalled, and why? What are the three outcomes that matter next week?\n\n## Make it automatic\n\nSchedule it at the same time every Friday, and write answers in the same note so patterns show up over time.`,
+    comments: [] },
+  { id: 'p4', title: 'Why Your Side Project Needs a Smaller Scope', author: 'Sam Okafor', category: 'Career',
+    tags: ['projects', 'learning'], date: '2026-07-19', cover: img('photo-1517694712202-14dd9538aa97'),
+    likes: 18, liked: false, bookmarked: false,
+    content: `Side projects die from ambition, not laziness.\n\n## Ship the ugly version\n\nPick the single feature that proves the idea and release it within two weekends.\n\n## Cut, then cut again\n\nIf a feature needs a settings page, it is probably not part of version one.`,
+    comments: [] },
+];
